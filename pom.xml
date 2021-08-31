@@ -25,8 +25,13 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.14.0</version>
+    </dependency>
   </dependencies>
-
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -43,6 +48,11 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
+          <configuration>
+            <!-- specify current java version here: -->
+            <source>8</source>
+            <target>8</target> <!-- or edit these in your properties -->
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
