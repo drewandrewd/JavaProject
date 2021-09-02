@@ -18,7 +18,7 @@ public class ThirdTest {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe");
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(55, TimeUnit.SECONDS);
     }
 
     @Test
