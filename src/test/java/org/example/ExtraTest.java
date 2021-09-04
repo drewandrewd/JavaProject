@@ -24,7 +24,7 @@ public class ExtraTest { // т.к. капчу в ThirdTest не проходит
         driver.get("https://online-bloknot.ru/");
         driver.findElement(By.cssSelector(".cke_button__bold_icon")).click();
         driver.switchTo().frame(1);
-        driver.findElement(By.xpath("/html/body")).sendKeys("Добрый день!");
+        driver.findElement(By.xpath("/html/body")).sendKeys("Добрый день!!");
         driver.switchTo().defaultContent();
     }
 }
